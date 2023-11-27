@@ -46,40 +46,64 @@ import ServiceCard from '@components/ServiceCard.astro';
         <!-- End Hero -->
 
         <!-- section services -->
-
-        <section class="section bg-brand_300">
+        <!-- Features -->
+        <section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <div class="container">
-            <!-- Title -->
-              <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                <h2 class="headline headline-h2">Nos services</h2>
-                <p class="mt-1 text-gray-600">Prêt à vivre l'expérience de l'Auto Detail?</p>
+            
+              <!-- Grid -->
+            <div class="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
+              <div class="lg:col-span-1">
+                <h2 class="headline headline-h2">
+                  Un véhicule étincelant
+                </h2>
+                <p class="mt-2 md:mt-4 text-offwhite">
+                  Un extèrieur et intèrieur impeccable.
+                  Offrez à votre véhicule un traitement complet, le tout dans le confort de votre domicile.
+                </p>
               </div>
-              <!-- End Title -->
-            <div class="services__grid--wrapper mt-14 flex flex-col justify-center gap-y-14">
-              <ul class="w-full grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-4 sm:gap-6 md:gap-8 xl:gap-10 2xl:grid-cols-4 p-2">	
-                <li>
-                  <ServiceCard icon='ri:car-washing-line' title='Nettoyage exterieur' description='Offrez à votre véhicule un traitement complet de pré-rinçage, de rinçage en profondeur et de nettoyage avec des produits spécifiques pour une carrosserie impeccable et une protection optimale.' />
-                </li>
-                <li>
-                  <ServiceCard icon='icon-park-outline:vacuum-cleaner' title='Nettoyage intèrieur' description="Offrez à votre véhicule un nettoyage intérieur complet comprenant l'aspirateur en profondeur, le nettoyage des tapis et des bancs en tissu, le traitement des taches, le nettoyage et la protection des surfaces en cuir, plastique, le nettoyage des vitres." />
-                </li>
-                <li>
-                  <ServiceCard icon='engine' title='Nettoyage du compartiment moteur' description="Application d'un shampooing neutre et d'un nettoyant à l'aide d'un pulvérisateur à mousse. Enfin, nous procédons au séchage et à la protection des surfaces plastiques et peintes." />
-                </li>
-                <li>
-                  <ServiceCard icon='bi:stars' title='Entretien de la carrosserie' description="Lustrage de la carroserie dans son ensemble à l'aide de produits dédiés"/>
-                </li>
-              </ul>
-              <div class="w-full grid gap-6 md:grid-cols-2 lg:grid-gap-8">
-                <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6872146/pexels-photo-6872146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
-                <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6873103/pexels-photo-6873103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
+              <!-- End Col -->
+
+              <div class="lg:col-span-2">
+                <div class="grid sm:grid-cols-2 gap-8 md:gap-12">
+                  <ServiceCard
+                    icon="ri:car-washing-line"
+                    title="Nettoyage extèrieur"
+                    description="Pré-rinçage et rinçage en profondeur. Nettoyage avec des produits spécifiques pour un extèrieur impeccable."
+                  />
+                  <ServiceCard
+                    icon="icon-park-outline:vacuum-cleaner"
+                    title="Nettoyage intèrieur"
+                    description="Nettoyage des tapis et des bancs en tissu. Nettoyage et protection des surfaces en cuir, plastique, des vitres."
+                  />
+                  <ServiceCard
+                    icon="engine"
+                    title="Nettoyage du compartiment moteur"
+                    description="Application d'un shampooing neutre et d'un nettoyant toutes surfaces à l'aide d'un pulvérisateur à mousse. Puis séchage et protection des surfaces plastiques et peintes."
+                  />
+                   <ServiceCard
+                    icon="bi:stars"
+                    title="Entretient de la carosserie"
+                    description="Lustrage de la carroserie dans son ensemble à l'aide de produits dédiés."
+                  />
+                </div>
               </div>
+              <!-- End Col -->
             </div>
-          </div>       
+            <!-- End Grid -->
+          </div>
+
+          <div class="w-full grid gap-6 md:grid-cols-2 lg:grid-gap-8 mt-8 lg:mt-12">
+              <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6872146/pexels-photo-6872146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
+              <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6873103/pexels-photo-6873103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
+          </div>
+
+        </div>
+
         </section>
+        <!-- End Features -->
 
         <!-- Pricing -->
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <!-- Title -->
           <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
             <h2 class="headline headline-h2">Nos tarifs</h2>
@@ -232,7 +256,7 @@ import ServiceCard from '@components/ServiceCard.astro';
           </div>
           <!-- End Grid -->
 
-        </div>
+        </section>
         <!-- End Pricing -->
 
     </main>
