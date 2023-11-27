@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// library imports
+import { Icon } from "astro-icon";
+
+import ServiceCard from '@components/ServiceCard.astro';
 ---
 
 <Layout title="Bienvenu sur fast Wash Master">
@@ -40,161 +45,195 @@ import Layout from "../layouts/Layout.astro";
         </section>
         <!-- End Hero -->
 
- 		<!-- Pricing -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <!-- Title -->
-  <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 class="headline headline-h2">Nos tarifs</h2>
-    <p class="mt-1 text-gray-600">Pour un véhicule étincelant</p>
-  </div>
-  <!-- End Title -->
+        <!-- section services -->
 
-  <!-- Grid -->
-  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
-    <!-- Card -->
-    <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-      <h3 class="headline headline-h4 text-dark">Fast (bronze)</h3>
-      <span class="mt-7 font-semibold text-fs-2xl text-brand-700">59€</span>
-      <p class="mt-2 text-sm text-dark">Environ 45 minutes</p>
+        <section class="section bg-brand_300">
+          <div class="container">
+            <!-- Title -->
+              <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+                <h2 class="headline headline-h2">Nos services</h2>
+                <p class="mt-1 text-gray-600">Prêt à vivre l'expérience de l'Auto Detail?</p>
+              </div>
+              <!-- End Title -->
+            <div class="services__grid--wrapper mt-14 flex flex-col justify-center gap-y-14">
+              <ul class="w-full grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-4 sm:gap-6 md:gap-8 xl:gap-10 2xl:grid-cols-4 p-2">	
+                <li>
+                  <ServiceCard icon='ri:car-washing-line' title='Nettoyage exterieur' description='Offrez à votre véhicule un traitement complet de pré-rinçage, de rinçage en profondeur et de nettoyage avec des produits spécifiques pour une carrosserie impeccable et une protection optimale.' />
+                </li>
+                <li>
+                  <ServiceCard icon='icon-park-outline:vacuum-cleaner' title='Nettoyage intèrieur' description="Offrez à votre véhicule un nettoyage intérieur complet comprenant l'aspirateur en profondeur, le nettoyage des tapis et des bancs en tissu, le traitement des taches, le nettoyage et la protection des surfaces en cuir, plastique, le nettoyage des vitres." />
+                </li>
+                <li>
+                  <ServiceCard icon='engine' title='Nettoyage du compartiment moteur' description="Application d'un shampooing neutre et d'un nettoyant à l'aide d'un pulvérisateur à mousse. Enfin, nous procédons au séchage et à la protection des surfaces plastiques et peintes." />
+                </li>
+                <li>
+                  <ServiceCard icon='bi:stars' title='Entretien de la carrosserie' description="Lustrage de la carroserie dans son ensemble à l'aide de produits dédiés"/>
+                </li>
+              </ul>
+              <div class="w-full grid gap-6 md:grid-cols-2 lg:grid-gap-8">
+                <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6872146/pexels-photo-6872146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
+                <img class="w-full aspect-video object-cover rounded-md" src="https://images.pexels.com/photos/6873103/pexels-photo-6873103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image Description">
+              </div>
+            </div>
+          </div>       
+        </section>
 
-      <ul class="mt-7 space-y-2.5 text-sm">
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-           Nettoyage extérieur à haute pression ou à sec
-          </span>
-        </li>
+        <!-- Pricing -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <!-- Title -->
+          <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+            <h2 class="headline headline-h2">Nos tarifs</h2>
+            <p class="mt-1 text-gray-600">Pour un véhicule étincelant</p>
+          </div>
+          <!-- End Title -->
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-            Shampouinage des sièges et tapis
-          </span>
-        </li>
+          <!-- Grid -->
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
+            <!-- Card -->
+            <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
+              <h3 class="headline headline-h4 text-dark">Fast (bronze)</h3>
+              <span class="mt-7 font-semibold text-fs-2xl text-brand-700">59€</span>
+              <p class="mt-2 text-sm text-dark">Environ 45 minutes</p>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-            Nettoyage des vitres
-          </span>
-        </li>
-      </ul>
-    </article>
-    <!-- End Card -->
+              <ul class="mt-7 space-y-2.5 text-sm">
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                  Nettoyage extérieur à haute pression ou à sec
+                  </span>
+                </li>
 
-     <!-- Card -->
-    <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-brand-600 ">
-      <h3 class="headline headline-h4 text-offwhite">Wash (argent)</h3>
-      <span class="mt-7 font-semibold text-fs-2xl text-offwhite">89€</span>
-      <p class="mt-2 text-sm text-offwhite">Environ 90 minutes</p>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                    Shampouinage des sièges et tapis
+                  </span>
+                </li>
 
-      <ul class="mt-7 space-y-2.5 text-sm">
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-           Inclus les avantages de la formule Fast
-          </span>
-        </li>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                    Nettoyage des vitres
+                  </span>
+                </li>
+              </ul>
+            </article>
+            <!-- End Card -->
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-            Nettoyage et rénovation des plastiques ext/int
-          </span>
-        </li>
+            <!-- Card -->
+            <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-brand-600 ">
+              <h3 class="headline headline-h4 text-offwhite">Wash (argent)</h3>
+              <span class="mt-7 font-semibold text-fs-2xl text-offwhite">89€</span>
+              <p class="mt-2 text-sm text-offwhite">Environ 90 minutes</p>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-            Brillance des pneus
-          </span>
-        </li>
+              <ul class="mt-7 space-y-2.5 text-sm">
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                  Inclus les avantages de la formule Fast
+                  </span>
+                </li>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-           Décrassage des jantes
-          </span>
-        </li>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                    Nettoyage et rénovation des plastiques ext/int
+                  </span>
+                </li>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-            Brillance des pneus
-          </span>
-        </li>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                    Brillance des pneus
+                  </span>
+                </li>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-offwhite">
-            Atténuement des rayures superficielles avec lustreur
-          </span>
-        </li>
-      </ul>
-    </article>
-    <!-- End Card -->
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                  Décrassage des jantes
+                  </span>
+                </li>
 
-     <!-- Card -->
-    <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-      <h3 class="headline headline-h4 text-dark">Master (or)</h3>
-      <span class="mt-7 font-semibold text-fs-2xl text-brand-700">129€</span>
-      <p class="mt-2 text-sm text-dark">Plus de 2h</p>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                    Brillance des pneus
+                  </span>
+                </li>
 
-      <ul class="mt-7 space-y-2.5 text-sm">
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-           Inclus les avantages de la formule Wash
-          </span>
-        </li>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-offwhite">
+                    Atténuement des rayures superficielles avec lustreur
+                  </span>
+                </li>
+              </ul>
+            </article>
+            <!-- End Card -->
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-            Nettoyage du compartiment moteur
-          </span>
-        </li>
+            <!-- Card -->
+            <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
+              <h3 class="headline headline-h4 text-dark">Master (or)</h3>
+              <span class="mt-7 font-semibold text-fs-2xl text-brand-700">129€</span>
+              <p class="mt-2 text-sm text-dark">Plus de 2h</p>
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-            Sous bassement</b>
-          </span>
-        </li>
+              <ul class="mt-7 space-y-2.5 text-sm">
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                  Inclus les avantages de la formule Wash
+                  </span>
+                </li>
 
-      </ul>
-    </article>
-    <!-- End Card -->
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                    Nettoyage du compartiment moteur
+                  </span>
+                </li>
 
-    <!-- Card -->
-    <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-      <h3 class="headline headline-h4 text-dark">VIP (diamant)</h3>
-      <span class="mt-7 font-semibold text-fs-2xl text-brand-700">159€</span>
-      <p class="mt-2 text-sm text-dark">Plus de 3h</p>
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                    Sous bassement</b>
+                  </span>
+                </li>
 
-      <ul class="mt-7 space-y-2.5 text-sm">
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-           Inclus les avantages de la formule Master
-          </span>
-        </li>
+              </ul>
+            </article>
+            <!-- End Card -->
 
-        <li class="flex space-x-2">
-          <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-dark">
-            Lustrage complet du véhicule
-          </span>
-        </li>
+            <!-- Card -->
+            <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
+              <h3 class="headline headline-h4 text-dark">VIP (diamant)</h3>
+              <span class="mt-7 font-semibold text-fs-2xl text-brand-700">159€</span>
+              <p class="mt-2 text-sm text-dark">Plus de 3h</p>
 
-      </ul>
-    </article>
-    <!-- End Card -->
+              <ul class="mt-7 space-y-2.5 text-sm">
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                  Inclus les avantages de la formule Master
+                  </span>
+                </li>
 
-  </div>
-  <!-- End Grid -->
+                <li class="flex space-x-2">
+                  <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="text-dark">
+                    Lustrage complet du véhicule
+                  </span>
+                </li>
 
-</div>
-<!-- End Pricing -->
+              </ul>
+            </article>
+            <!-- End Card -->
+
+          </div>
+          <!-- End Grid -->
+
+        </div>
+        <!-- End Pricing -->
+
     </main>
 </Layout>
