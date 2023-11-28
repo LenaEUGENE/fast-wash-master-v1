@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 
 import ServiceCard from '@components/ServiceCard.astro';
+import ProcessCard from '@components/ProcessCard.astro';
 import Navigation from '@components/Navigation.astro';
 import Footer from '@components/Footer.astro';
 ---
@@ -249,8 +250,22 @@ import Footer from '@components/Footer.astro';
         </section>
         <!-- End Pricing -->
 
-        <!-- Footer -->
-        <Footer />
+        <!-- CTA -->
+        <section class="section">
+          <div class="container">
+             <!-- Title -->
+              <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+                <h2 class="headline headline-h2">Comment on procède?</h2>
+                <p class="mt-1 text-offwhite">Voici le marche à suivre pour un mission sans encombre</p>
+              </div>
+              <!-- End Title -->
 
+            
+            
+            <!-- End Grid -->
+          </div>
+        </section>
     </main>
+    <!-- Footer -->
+    <Footer />
 </Layout>
