@@ -250,7 +250,7 @@ import Footer from '@components/Footer.astro';
         </section>
         <!-- End Pricing -->
 
-        <!-- CTA -->
+        <!-- Process -->
         <section class="section">
           <div class="container">
              <!-- Title -->
@@ -259,9 +259,24 @@ import Footer from '@components/Footer.astro';
                 <p class="mt-1 text-offwhite">Voici le marche à suivre pour un mission sans encombre</p>
               </div>
               <!-- End Title -->
-
-            
-            
+              <!-- Grid -->
+              <div class="mx-auto grid md:grid-cols-3 gap-6 lg:gap-8">
+                <ProcessCard 
+                  icon="phone-call"
+                  title="Prendre RDV"
+                  description="Contactez-moi par via Whatsapp et choississez votre formule en fonction de votre besoin."
+                />
+                <ProcessCard 
+                  icon="map-pin"
+                  title="Je viens à vous"
+                  description="Je me rends sur à votre domicile ou tout autre lieu à votre convenance (et réglementaire) avec le matériel nécessaire à ma mission."
+                />
+                <ProcessCard 
+                  icon="phone-call"
+                  title="Règlement"
+                  description="Vous me régler par virement ou espèce (prochaînement carte bancaire), contre facture."
+                />
+              </div>
             <!-- End Grid -->
           </div>
         </section>
