@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+
+//import components
+import { Icon } from "astro-icon";
+---
+
+<header
+    class="section flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-fs-base py-3"
+>
+    <nav
+        class="container mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+        aria-label="Global"
+    >
+        <div class="flex items-center justify-between">
+            <a
+                href="/"
+                aria-label="lien vers la page d'accueil"
+                class="flex justify-center"
+            >
+                <Image
+                    src="/logo.jpg"
+                    alt="logo - Fast Wash Master"
+                    width={120}
+                    height={80}
+                    class="logo__img block w-20 rounded-md"
+                />
+            </a>
+        </div>
+        <div
+            id="navbar-collapse-with-animation"
+            class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        >
+            <div
+                class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7"
+            >
+                <a
+                    class="font-medium text-offwhite hover:text-brand-600 sm:py-6"
+                    href="/#services"
+                    aria-current="page">Services</a
+                >
+                <a
+                    class="font-medium text-offwhite hover:text-brand-600 sm:py-6"
+                    href="/#tarifs">Tarifs</a
+                >
+                <a
+                    class="group inline-flex justify-center items-center text-center p-1 rounded-full hover:bg-[#25D366] focus:outline-none focus:ring-2 focus:ring-offoffwhite focus:ring-offset-1 focus:ring-offset-offoffwhite transition"
+                    href="#"
+                >
+                    <Icon name="whatsapp" class="w-6 md:w-8 text-[#25D366] group-hover:text-offwhite" />
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- ========== END HEADER ========== -->
