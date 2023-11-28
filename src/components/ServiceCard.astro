@@ -10,23 +10,10 @@ interface Props {
 const { icon, title, description } = Astro.props;
 ---
 
-<article
-    class="service__card relative flex flex-col p-8 bg-white text-dark rounded-md shadow-md"
->
-    <div
-        class="service__card-content space-y-4 md:space-y-6"
-        aria-hidden="true"
-    >
-        <div class="sectionTitle flex justify-start items-center space-x-2">
-            <div
-                class="inline-flex justify-center items-center w-[3rem] h-[3rem] rounded-md bg-offwhite"
-            >
-                <Icon name={icon} class="text-brand-600 w-8" />
-            </div>
-            <h3 class="card__title headline headline-h4 text-dark">{title}</h3>
-        </div>
-        <p class="card__description">
-            {description}
-        </p>
-    </div>
+<article class="ProcessCard p-6 rounded-md bg-offwhite text-dark">
+    <Icon name={icon} class="text-brand-600 w-8" />
+    <h3 class="headline headline-4 text-dark">{title}</h3>
+    <p class="description">
+        {description}
+    </p>
 </article>
