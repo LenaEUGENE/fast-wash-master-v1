@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+    icon: string;
+    title: string;
+    description: string;
+}
+
+const { icon, title, description } = Astro.props;
+---
+
+<article class="ProcessCard p-6 rounded-md bg-offwhite text-dark">
+    <Icon name={icon} class="text-brand-600 w-8" />
+    <h3 class="headline headline-4 text-dark">{title}</h3>
+    <p class="description">
+        {description}
+    </p>
+</article>
