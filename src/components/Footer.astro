@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+
+//import components
+import { Icon } from "astro-icon";
+---
+
+<footer class="section py-6 text-offwhite text-fs-tiny md:text-fs-small">
+    <div class="container">
+        <!-- Grid -->
+        <div class="text-center grid justify-center">
+            <div class="logo-wrapper w-full flex-col md:flex justify-center">
+                <a
+                    href="/"
+                    aria-label="lien vers la page d'accueil"
+                    class="flex justify-center"
+                >
+                    <Image
+                        src="/logo.jpg"
+                        alt="logo - Fast Wash Master"
+                        width={60}
+                        height={60}
+                        class="logo__img block w-16"
+                    />
+                </a>
+                <div class="mt-3 space-y-2">
+                    <p>
+                        © Fast Wash Master. 2023 - Tous droits réservés
+                    </p>
+
+                    <!-- Social Brands -->
+                    <div class="mt-3 space-x-2">
+                        <a
+                            class="group inline-flex justify-center items-center text-center p-1 rounded-full hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-offwhite focus:ring-offset-1 focus:ring-offset-offwhite transition"
+                            href="#"
+                        >
+                            <Icon name="facebook" class="w-6 text-brand-500 group-hover:text-offwhite" />
+                        </a>
+                        <a
+                            class="group inline-flex justify-center items-center text-center p-1 rounded-full hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offwhite focus:ring-offset-1 focus:ring-offset-offwhite transition"
+                            href="#"
+                        >
+                            <Icon name="insta" class="w-6 text-brand-500 group-hover:text-offwhite" />
+                        </a>
+                        <a
+                            class="group inline-flex justify-center items-center text-center p-1 rounded-full hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offwhite focus:ring-offset-1 focus:ring-offset-offwhite transition"
+                            href="#"
+                        >
+                            <Icon name="tiktok" class="w-6 text-brand-500 group-hover:text-offwhite" />
+                        </a>
+                    </div>
+                    <!-- End Grid -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
