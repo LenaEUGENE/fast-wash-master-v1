@@ -116,134 +116,151 @@ import Footer from '@components/Footer.astro';
               <!-- End Title -->
 
               <!-- Grid -->
-              <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
-                <!-- Card -->
-                <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-                  <h3 class="headline headline-h4 text-dark">Fast (bronze)</h3>
-                  <span class="mt-7 font-semibold text-fs-2xl text-brand-700">59€</span>
-                  <p class="mt-2 text-sm text-dark">Environ 45 minutes</p>
+              <ul class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
+                <li>
+										<article class="flex flex-col border-2 border-brand-500 text-center text-[1rem] p-6 rounded-2xl shadow-2xl shadow-brand-500/20 lg:p-8">
+											<h3 class="headline headline-4">Fast(bronze)</h3>
+											<span class="mt-5 font-bold text-fs-3xl">
+												59
+												<span class="font-bold text-2xl -mr-2">€</span>
+											</span>
+											<div class="card-pricing__details w-full bg-brand-500/20 px-1 rounded-sm py-1">
+												<span class="text-offwhite">Environ 45mn</span>
+											</div>
 
-                  <ul class="mt-7 space-y-2.5 text-sm">
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                      Nettoyage extérieur à haute pression ou à sec
-                      </span>
-                    </li>
+											<ul class="mt-6 space-y-2.5 text-sm">
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage extèrieur
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage des siéges et banc de tissus
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage des vitres intèrieur et extèrieur
+													</span>
+												</li>
+											</ul>
+										</article>
+								</li>
+               
+                <li>
+										<article class="flex flex-col border-2 border-brand-500 text-center text-[1rem] p-6 rounded-2xl shadow-2xl shadow-brand-500/20 lg:p-8">
+											<h3 class="headline headline-4">Wash(argent)</h3>
+											<span class="mt-5 font-bold text-fs-3xl">
+												89
+												<span class="font-bold text-2xl -mr-2">€</span>
+											</span>
+											<div class="card-pricing__details w-full bg-brand-500/20 px-1 rounded-sm py-1">
+												<span class="text-offwhite">Environ 90mn</span>
+											</div>
 
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                        Shampouinage des sièges et tapis
-                      </span>
-                    </li>
+											<ul class="mt-6 space-y-2.5 text-sm">
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Formule Fast +
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage et rénovation des plastiques ext/int
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Décrassage des jantes
+													</span>
+												</li>
+                        <li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Cammouflage des micro-rayures superficielles à l'aide d'un lustreur
+													</span>
+												</li>
+											</ul>
+										</article>
+								</li>
 
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                        Nettoyage des vitres
-                      </span>
-                    </li>
-                  </ul>
-                </article>
-                <!-- End Card -->
+                <li>
+										<article class="flex flex-col border-2 border-brand-500 text-center text-[1rem] p-6 rounded-2xl shadow-2xl shadow-brand-500/20 lg:p-8">
+											<h3 class="headline headline-4">Master(or)</h3>
+											<span class="mt-5 font-bold text-fs-3xl">
+												129
+												<span class="font-bold text-2xl -mr-2">€</span>
+											</span>
+											<div class="card-pricing__details w-full bg-brand-500/20 px-1 rounded-sm py-1">
+												<span class="text-offwhite">Plus de 2h</span>
+											</div>
 
-                <!-- Card -->
-                <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-brand-600 ">
-                  <h3 class="headline headline-h4 text-offwhite">Wash (argent)</h3>
-                  <span class="mt-7 font-semibold text-fs-2xl text-offwhite">89€</span>
-                  <p class="mt-2 text-sm text-offwhite">Environ 90 minutes</p>
+											<ul class="mt-6 space-y-2.5 text-sm">
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Formule Wash +
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage du compartiment moteur
+													</span>
+												</li>
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Nettoyage des sous bassement
+													</span>
+												</li>
+                        <li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Cammouflage des micro-rayures superficielles à l'aide d'un lustreur
+													</span>
+												</li>
+											</ul>
+										</article>
+								</li>
 
-                  <ul class="mt-7 space-y-2.5 text-sm">
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-offwhite">
-                      Inclus les avantages de la formule Fast
-                      </span>
-                    </li>
+                <li>
+										<article class="flex flex-col border-2 border-brand-500 text-center text-[1rem] p-6 rounded-2xl shadow-2xl shadow-brand-500/20 lg:p-8">
+											<h3 class="headline headline-4">VIP(diamant)</h3>
+											<span class="mt-5 font-bold text-fs-3xl">
+												159
+												<span class="font-bold text-2xl -mr-2">€</span>
+											</span>
+											<div class="card-pricing__details w-full bg-brand-500/20 px-1 rounded-sm py-1">
+												<span class="text-offwhite">Environ 3h</span>
+											</div>
 
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-offwhite">
-                        Nettoyage et rénovation des plastiques ext/int
-                      </span>
-                    </li>
-
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-offwhite">
-                      Décrassage des jantes
-                      </span>
-                    </li>
-
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-offwhite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-offwhite">
-                        Atténuement des rayures superficielles avec un lustreur
-                      </span>
-                    </li>
-                  </ul>
-                </article>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-                  <h3 class="headline headline-h4 text-dark">Master (or)</h3>
-                  <span class="mt-7 font-semibold text-fs-2xl text-brand-700">129€</span>
-                  <p class="mt-2 text-sm text-dark">Plus de 2h</p>
-
-                  <ul class="mt-7 space-y-2.5 text-sm">
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                      Inclus les avantages de la formule Wash
-                      </span>
-                    </li>
-
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                        Nettoyage du compartiment moteur
-                      </span>
-                    </li>
-
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                        Sous bassement</b>
-                      </span>
-                    </li>
-
-                  </ul>
-                </article>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <article class="flex flex-col border border-brand-600 text-center rounded-md p-8 bg-offwhite ">
-                  <h3 class="headline headline-h4 text-dark">VIP (diamant)</h3>
-                  <span class="mt-7 font-semibold text-fs-2xl text-brand-700">159€</span>
-                  <p class="mt-2 text-sm text-dark">Plus de 3h</p>
-
-                  <ul class="mt-7 space-y-2.5 text-sm">
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                      Inclus les avantages de la formule Master
-                      </span>
-                    </li>
-
-                    <li class="flex space-x-2">
-                      <svg class="flex-shrink-0 mt-0.5 h-4 w-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="text-dark">
-                        Lustrage complet du véhicule
-                      </span>
-                    </li>
-
-                  </ul>
-                </article>
-                <!-- End Card -->
-
-              </div>
+											<ul class="mt-6 space-y-2.5 text-sm">
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Formule Master +
+													</span>
+												</li>
+												
+												<li class="flex space-x-2 items-start">
+													<Icon name="check-circle" class="w-4 h-4 text-brand-500 bg-offwhite rounded-full flex-shrink-0" />
+													<span class="text-offwhite text-left leading-tight">
+														Lustrage complet du véhicule
+													</span>
+												</li>
+                        
+											</ul>
+										</article>
+								</li>
+              </ul>
               <!-- End Grid -->
           </div>
 
@@ -269,7 +286,7 @@ import Footer from '@components/Footer.astro';
                 <ProcessCard 
                   icon="map-pin"
                   title="Je viens à vous"
-                  description="Je me rends sur à votre domicile ou tout autre lieu à votre convenance (et réglementaire) avec le matériel nécessaire à ma mission."
+                  description="Je me rends à votre domicile, ou tout autre lieu à votre convenance (et réglementaire), avec le matériel nécessaire à ma mission."
                 />
                 <ProcessCard 
                   icon="phone-call"
