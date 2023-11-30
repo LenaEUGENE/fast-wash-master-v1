@@ -1,0 +1,57 @@
+---
+import { Icon } from "astro-icon";
+
+// import components
+import ServiceCard from '@components/ServiceCard.astro';
+
+---
+<section id="services" class="section">
+    <div class="container">
+    
+        <!-- Grid -->
+        <div class="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div class="lg:col-span-1">
+            <h2 class="headline headline-h2">
+                Un véhicule étincelant
+            </h2>
+            <p class="mt-2 md:mt-4 text-offwhite">
+                Un extèrieur et intèrieur impeccable.
+                Offrez à votre véhicule un traitement complet, le tout dans le confort de votre domicile.
+            </p>
+            </div>
+            <!-- End Col -->
+
+            <div class="lg:col-span-2">
+            <div class="grid sm:grid-cols-2 gap-8 md:gap-12">
+                <ServiceCard
+                icon="ri:car-washing-line"
+                title="Nettoyage extèrieur"
+                description="Pré-rinçage et rinçage en profondeur. Nettoyage avec des produits spécifiques pour un extèrieur impeccable."
+                />
+                <ServiceCard
+                icon="icon-park-outline:vacuum-cleaner"
+                title="Nettoyage intèrieur"
+                description="Nettoyage des tapis et des bancs en tissu. Nettoyage et protection des surfaces en cuir, plastique, des vitres."
+                />
+                <ServiceCard
+                icon="engine"
+                title="Nettoyage du compartiment moteur"
+                description="Application d'un shampooing neutre et d'un nettoyant toutes surfaces à l'aide d'un pulvérisateur à mousse. Puis séchage et protection des surfaces plastiques et peintes."
+                />
+                <ServiceCard
+                icon="bi:stars"
+                title="Entretient de la carosserie"
+                description="Lustrage de la carroserie dans son ensemble à l'aide de produits dédiés."
+                />
+            </div>
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+
+        <div class="w-full grid gap-6 md:grid-cols-2 lg:grid-gap-8 mt-8 lg:mt-12">
+            <img class="w-full aspect-video object-cover rounded-md" src="lustrer-voiture.jpg" alt="home lustrant le capot d'une voiture">
+            <img class="w-full aspect-video object-cover rounded-md" src="nettoyage-intérieur-voiture.jpg" alt="homme nettoyant l'habitacle d'une voiture">
+        </div>
+    </div>
+</section>
